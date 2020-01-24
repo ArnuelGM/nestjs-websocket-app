@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Websocket Chat app</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-5">
+        <h1>Websocket Chat app</h1>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="">Message</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="message">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" id="send">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="messages"></div>
+        </div>
+
+    </div>
+    <script src="/chat/index.js"></script>
+</body>
+</html>
